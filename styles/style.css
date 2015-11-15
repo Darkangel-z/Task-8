@@ -188,6 +188,7 @@ input, textarea, select, button{
 	border-bottom:4px solid black;
 }
 .middle-block h2{
+	font-size:15px;
 	display:block;
 	padding:12px 25px 12px;
 	border-bottom: 5px solid #cecece;
@@ -212,7 +213,7 @@ input, textarea, select, button{
 }
 .middle-block .block .description{
 	color:#979797;
-	padding:0 20px;
+	padding:20px 20px 0;
 }
 .middle-block .block:nth-child(4n){
 	margin-right:0;
@@ -220,7 +221,87 @@ input, textarea, select, button{
 
 
 
+.footer-block{
+	background:#313131 url('../images/bg.png');
+	width:100%;
+	color:white;
+}
+.footer-block .block{
+	margin-right:15px;
+	width:220px;
+	display:inline-block;
+	font-size:12px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.footer-block .block h3{
+	margin:0;
+	font-size:16px;
+	font-weight:bold;
+	padding:15px 0;
+	margin-bottom:3px;
+	border-bottom:1px solid #6f6f6f;
+}
+.footer-block .block img{
+	width:46px;
+	height:46px;
+	border:2px solid white;
+	margin-bottom:22px;
+	margin-right:1px;
+	margin-left:2px;
+}
+.footer-block .block img:nth-child(4n){
+	margin-right:0;
+	margin-left:1px;
+}
+.footer-block .block .text{
+	display:inline-block;
+	padding:4px 1px 18px;
+}
+.footer-block .block .text p{
+	padding:15px 0px 0;
+}
+.footer-block .block .text .mail{
+	color:#999999;
+	font-weight:bold;
+}
+.footer-block .block .text .time{
+	padding:6px 0px 0;
+}
+.footer-block .block:nth-child(4n){
+	margin-right:0;
+	padding-bottom:18px;
+}
+.footer-block .block:nth-child(4n) h3{
+	margin-bottom:20px;
+}
 
 
 
-
+.footer{
+	background:#313131 url('../images/bg2.png');
+	width:100%;
+	color:#999999;
+	font-size:12px;
+	padding:20px 0px;
+}
+.footer a.logo{
+	background:url('../images/blogo.png') no-repeat 0 0;
+	float:left;
+	min-width:130px;
+	min-height:36px;
+	padding-right:15px;
+}
+.footer .info{
+	float:left;
+	padding-left:15px;
+	border-left:1px solid #272f34;
+}
+.footer .about-theme{
+	float:right;
+	padding-right:20px;
+}
+.footer .about-theme p span.grey{
+	color:#b2b2b2;
+	font-weight:bold;
+}
