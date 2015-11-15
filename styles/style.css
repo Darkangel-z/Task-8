@@ -41,7 +41,7 @@ input, textarea, select, button{
 
 /*header-block*/
 .header-block{
-	background-image:url('../images/bg.png');
+	background:#313131 url('../images/bg.png');
 	width:100%;
 	color:white;
 }
@@ -52,6 +52,7 @@ input, textarea, select, button{
 }
 .header-block{
 	border-bottom:4px solid black;
+	position:relative;
 }
 .header-block .head{
 	overflow:hidden;
@@ -129,10 +130,93 @@ input, textarea, select, button{
 
 
 
+.blocks-block{
+	width:100%;
+	overflow:visible;
+	position:absolute;		
+	margin-top:-65px;
+	padding-left:1px;
+}
+.blocks-block .block{
+	width:180px;
+	padding:20px;
+	font-size:12px;
+	margin-right:15px;
+	display:inline-block;
+	top:-65px;
+	left:0;
+	background-color:white;
+	box-shadow:0 0 2px 1px #e9e9e9;
+}
+.blocks-block .block h2{
+	font-size:15px;
+	font-weight:bolder;
+}
+.blocks-block .block .description{
+	padding-top:25px;
+	color:#979797;
+}
+.blocks-block .block .text{
+	padding-top:12px;
+	padding-bottom:25px;
+	border-bottom: 5px solid #cecece;
+    border-image-repeat: round;
+    border-image-source: url("../images/border.png");
+    border-image-slice: 4;
+    border-style: solid;
+    border-width: 5px;
+    border-top:0;
+}
+.blocks-block .block:nth-child(4n){
+	margin-right:0;
+}
+.blocks-block .block a{
+	color:#333333;
+	text-decoration:none;
+	padding-top:15px;
+	font-size: 13px;
+	font-weight:bold;
+	display:block;
+}
 
 
 
-
+.middle-block{
+	width:100%;
+	padding-top:320px;
+	padding-bottom:50px;
+	border-bottom:4px solid black;
+}
+.middle-block h2{
+	display:block;
+	padding:12px 25px 12px;
+	border-bottom: 5px solid #cecece;
+    border-image-repeat: round;
+    border-image-source: url("../images/border.png");
+    border-image-slice: 4;
+    border-style: solid;
+    border-width: 5px;
+    border-top:0;
+	margin-bottom:12px;
+}
+.middle-block .block{
+	margin-top:20px;
+	margin-right:15px;
+	width:220px;
+	height:200px;
+	display:inline-block;
+	font-size:12px;
+}
+.middle-block .block .text{
+	padding:0 20px;
+}
+.middle-block .block .description{
+	color:#979797;
+	padding:0 20px;
+}
+.middle-block .block:nth-child(4n){
+	margin-right:0;
+}
 
 
 
