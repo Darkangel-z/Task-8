@@ -51,12 +51,15 @@ input, textarea, select, button{
 	overflow:hidden;
 	position:relative;
 }
+.header-block .main{
+	background:url('../images/comp.png') no-repeat 75% 53%;
+}
 .header-block{
 	border-bottom:4px solid black;
 	position:relative;
 }
 .header-block .head{
-	overflow:hidden;
+	overflow:visible;
 	margin-top:24px;
 }
 .header-block .head a.logo{
@@ -64,6 +67,9 @@ input, textarea, select, button{
 	float:left;
 	min-width:130px;
 	min-height:36px;
+}
+.main-navigation-mobile{
+	display:none;
 }
 .header-block .main-navigation{
 	padding-right:10px;
@@ -103,12 +109,12 @@ input, textarea, select, button{
 }
 .header-block .content{
 	width:305px;
-	padding:60px 5px 130px;
-	float:left;
+	padding:60px 5px 160px 5px;;
 }
 .header-block .content h2{
 	font-size: 24px;
 	text-align:left;
+	padding-top:40px;
 }
 .header-block .content p{
 	font-size: 12px;
@@ -147,7 +153,6 @@ input, textarea, select, button{
 	overflow:visible;
 	position:absolute;		
 	margin-top:-65px;
-	padding-left:1px;
 }
 .blocks-block .block{
 	width:180px;
@@ -359,3 +364,85 @@ input, textarea, select, button{
 	color:#b2b2b2;
 	font-weight:bold;
 }
+
+
+
+
+
+@media (max-width: 950px){
+	.main{	
+		width:500px;
+	}
+	.main-navigation{
+		display:none;
+	}	
+	.main-navigation-mobile{
+		display: block;		
+		width: 100%;
+	}
+	.main-navigation-mobile li a{
+		padding: 5px 10px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		box-sizing: border-box;
+		background: #fff;
+		border-bottom: solid 1px #194d7c;
+	}
+	.main-navigation-mobile li a:hover, .main-navigation-mobile li a:active, .main-navigation-mobile li.active a{
+		color: #fff;
+		background-color: grey;
+	}
+	.header-block .main{
+		background:inherit;
+	}
+	.header-block .head a.logo,.footer a.logo{
+		float:none;
+		display:block;
+		background-position:50% 0;
+	}
+	.header-block input, .footer .info, .footer .about-theme{
+		float:none;
+		display:block;
+		margin:5px auto;
+	}
+	.footer .info, .footer .about-theme{
+	padding:0 10px;
+	}
+	.header-block .container{
+		display:none;
+	}	
+	.header-block .content{
+		margin:0 10%;
+		width:80%;
+		text-align:center;
+	}
+	.header-block .button{
+		margin:0 auto;
+	}
+	
+	
+	.middle-block{
+		padding-top:620px;
+	}
+	.middle-block .container{
+		display:none;
+	}
+	
+	.block{
+	margin: auto;
+	}
+}
+@media (max-width: 505px){
+	.main{	
+		width:260px;
+	}
+	.middle-block{
+		padding-top:1310px;
+	}
+	.block{
+	margin-left: 10%;
+	}
+
+}
+	
